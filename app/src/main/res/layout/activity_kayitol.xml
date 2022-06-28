@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kayitol">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="384dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Üyelik Oluştur"
+        android:textColor="#CC17A14D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kayitolbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kayitolbutton"
+        android:layout_width="251dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#29B3C5"
+        android:onClick="üyelikolustur"
+        android:text="Üyelik Oluştur"
+        android:textColor="#CCF3F8F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="321dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/kayitolbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/user"
+            android:backgroundTint="#80191919"
+            android:ems="10"
+            android:hint="Bir Kullanıcı Adı Girin"
+            android:inputType="textPersonName"
+            android:textAlignment="textStart"
+            android:textColor="#CC17A14D"
+            android:textColorHint="#80878383" />
+
+        <EditText
+            android:id="@+id/usernameLogin"
+            android:layout_width="match_parent"
+            android:drawableEnd="@drawable/email"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#80191919"
+            android:ems="10"
+            android:hint="Email Adresinizi Girin"
+            android:inputType="textEmailAddress"
+            android:textAlignment="textStart"
+            android:textColor="#CC17A14D"
+            android:textColorHint="#80878383" />
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#80191919"
+            android:ems="10"
+            android:hint="Şifre Girin"
+            android:drawableEnd="@drawable/password"
+            android:inputType="textPassword"
+            android:textAlignment="textStart"
+            android:textColor="#CC17A14D"
+            android:textColorHint="#80878383" />
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#80191919"
+            android:ems="10"
+            android:drawableEnd="@drawable/password"
+            android:hint="Şifrenizi Yeniden Girin"
+            android:inputType="textPassword"
+            android:textAlignment="textStart"
+            android:textColor="#CC17A14D"
+            android:textColorHint="#806A6868" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/registerback"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="registerDön"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/registerback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
